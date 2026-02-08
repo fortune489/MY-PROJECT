@@ -119,4 +119,15 @@
             color: white;
             padding: 10px;
         }
-        
+        .spinning-image {
+    animation: spin 5s linear infinite; 
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg); 
+    }
+    100% {
+        transform: rotate(70deg); 
+    }
+}
