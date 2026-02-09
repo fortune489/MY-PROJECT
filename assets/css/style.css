@@ -1,134 +1,122 @@
- header{
-            background-color: rgba(14, 7, 14, 0.865);
-            padding: 10px;
-            color: #ac17173a;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            
+:root {
+    --bs-rgb-warning: 255, 165, 0;
+    --bg-rgb-dark: 14, 7, 14, 0.865;
+}
 
-        }
-        header nav a{
-            text-decoration: none;
-            color: rgba(255, 255, 255, 0.957);
-            font-size: 13px;
-            display: block;
-            padding: 5px;
-            
-        }
-        .enquiry{
-            display: flex;
-           padding-bottom: 50px;
-           
+header {
+    background-color: rgba(var(--bg-rgb-dark));
+    padding: 10px ;
+    color: rgb(var(--bs-rgb-warning));
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header nav{
+    display: flex;
+}
 
-        }
-       
+header nav a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.957);
+    font-size: 13px;
+    display: block;
+    padding: 5px 10px;
+    font-weight: bold;
+    &:hover{
+        color:rgb(var(--bs-rgb-warning))
+    }
+}
+header .active{
+    color:rgb(var(--bs-rgb-warning))
+}
 
-        div.container {
-            color: orange;
-            display: flex;
-           font-size: larger;
-           font-weight: 200;
-           width: 80%;
-           
-          
-            
-        }
-        div.home{
-            color: orange;
-            text-align: right;    
-            
-        }
 
-        div.service{
-            color: white;
-            text-align: right;
-            padding: 5px;
-            font-weight: bolder;
-        }
+div.service {
+    color: white;
+    text-align: right;
+    padding: 5px;
+    font-weight: bolder;
+}
 
-        .booking{
-            background-color: orange;
-            color: white;
-        }
-        
-        div.mycontainer{
-            background-color: rgba(0, 0, 0, 0.717);
-            width: 80%;
-            border: 20px;
-            padding: 30px;
-            border-radius: 5px;
-            
-        }
-        .btn{
-            background-color: orange;
-            color: white;
-        padding: 20px;
-        
-        }
 
-        .my_container{
-             background-color: rgba(0, 0, 0, 0.737);
 
-        }
-           
-        .my_container h4{
-        color: orange;
-        }
+div.mycontainer {
+    background-color: rgba(0, 0, 0, 0.717);
+    width: 80%;
+    border: 20px;
+    padding: 30px;
+    border-radius: 5px;
 
-        .my_container h5{
-            color: orange;
-        }
+}
 
-        .my_container h3{
-            color: orange;
-        }
 
-        .my_container h1{
-            color: orange;
-        }
-         .mycontainer h1{
-            color: orange;
-         }
+.my_container {
+    background-color: rgba(0, 0, 0, 0.737);
 
-         .mycontainer h2{
-            color: white;
-         }
+}
 
-         .my_container p{
-            color: white;
-         }
+.my_container h4 {
+    color: orange;
+}
 
-         .home_container{
-            background-color: rgba(0, 0, 0, 0.728);
-            padding: 30px;
-            margin: 20px 10px;
-            
-         }
-        .home_container h6{
-            color: white;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            font-size: xx-large;
-            padding: 10px;
-            
-        }
+.my_container h5 {
+    color: orange;
+}
 
-        .btn2{
-            background-color: orange;
-            color: white;
-            padding: 10px;
-        }
-        
-        .spinning-image {
-    animation: spin 10s linear infinite; 
+.my_container h3 {
+    color: orange;
+}
+
+.my_container h1 {
+    color: orange;
+}
+
+.mycontainer h1 {
+    color: orange;
+}
+
+.mycontainer h2 {
+    color: white;
+}
+
+.my_container p {
+    color: white;
+}
+
+.home_container {
+    background-color: rgba(0, 0, 0, 0.728);
+    padding: 30px;
+    margin: 20px 10px;
+
+}
+
+.home_container h6 {
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: xx-large;
+    padding: 10px;
+
+}
+
+.btn2 {
+    background-color: orange;
+    color: white;
+    padding: 10px;
+}
+
+.spinning-image {
+    animation: spin 10s linear infinite;
 }
 
 @keyframes spin {
     0% {
-        transform: rotate(0deg); 
+        transform: rotate(0deg);
     }
+
     100% {
-        transform: rotate(70deg); 
+        transform: rotate(70deg);
     }
 }
