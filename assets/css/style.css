@@ -119,8 +119,9 @@
             color: white;
             padding: 10px;
         }
+        
         .spinning-image {
-    animation: spin 5s linear infinite; 
+    animation: spin 10s linear infinite; 
 }
 
 @keyframes spin {
